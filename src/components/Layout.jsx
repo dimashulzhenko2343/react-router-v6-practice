@@ -1,14 +1,31 @@
-import { Link, Outlet } from "react-router-dom";
-import s from './Layout.module.css'
+import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import s from "./Layout.module.css";
 
+const setActive = ({ isActive }) => isActive ? s.active : "";
 const Layout = () => {
   return (
     <div className={s.container}>
-      
       <header className={s.header}>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/blog"}>Blog</Link>
-        <Link to={"/about"}>About</Link>
+        <NavLink
+          to="/"
+          className={setActive}
+          
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={setActive}
+        >
+          Blog
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={setActive}
+        >
+          About
+        </NavLink>
       </header>
 
       <main className={s.main}>

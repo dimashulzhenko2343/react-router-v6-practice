@@ -16,6 +16,11 @@
   color: rgb(231, 74, 74);
 }
 
+a.active {
+  outline: none;
+  color: rgb(231, 74, 74);  
+}
+
 .main {
   height: calc(100vh - 250px);
 }
