@@ -1,6 +1,7 @@
 .header {
   padding-top: 30px;
   height: 100px;
+  text-align: center;
   background: rgb(65, 64, 64);
 }
 
@@ -22,13 +23,19 @@ a.active {
 }
 
 .main {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 170px);
+}
+
+.mainContainer {
+  margin: 0px auto;
+  max-width: 1200px;
 }
 
 .footer {
-  height: 100px;
-  padding-top: 20px;
+  height: 30px;
+  padding-top: 10px;
   background-color: rgb(65, 64, 64);
-  font-size: 30px;
+  text-align: center;
+  font-size: 20px;
   color: brown;
 }

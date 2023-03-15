@@ -1,3 +1,37 @@
+.aboutPage {
+  padding-top: 5px;
+}
+
 .title {
-    font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.homes {
+  display: flex;
+}
+
+.homesMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0px 20px;
+  width: 200px;
+}
+
+.homesMenu a {
+  padding: 0px 0px 10px 0px;
+  color: black;
+}
+
+a.aboutActiv {
+  outline: none;
+  color: red;
+}
+
+.homesImage {
+  flex-grow: 1;
+}
+.homesImages {
+  margin: 0px auto;
 }
